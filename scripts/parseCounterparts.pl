@@ -109,7 +109,7 @@ sub getFileName {
     my($fname);
     my($n) = 0;
     while (1) {
-        $fname = sprintf("%s/%s-%03d", $cpdir, $f, $n);
+        $fname = sprintf("%s/%s-%03d.gcn3", $cpdir, $f, $n);
         if ($n >= 1000) {
             fatalError("Could not find file name for circular.");
         }
