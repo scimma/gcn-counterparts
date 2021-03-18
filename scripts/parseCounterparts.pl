@@ -41,7 +41,7 @@ while ($line = <>) {
     }
     if ($line =~ /<\/tr>/) {
         if ($cfound) {
-            push($counterparts->{$current_type}, $current_url);
+            push(@{$counterparts->{$current_type}}, $current_url);
         }
         $cfound = 0;
         $current_type = "none";
